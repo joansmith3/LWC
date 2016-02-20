@@ -1,14 +1,8 @@
+---
 language: java
 jdk: oraclejdk7
 install: true
 script: mvn -Dmaven.javadoc.skip=true clean install
-notifications:
-  webhooks:
-    urls:
-      - http://api.getlwc.org/events/travisci
-    on_success: always
-    on_failure: always
-    on_start: true
 addons:
   artifacts:
     key:
